@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -28,13 +28,16 @@
       <div class="container nav">
         <a href="#" class="logo-wrap" aria-label="Bills Tree Service Home">
           <!-- Replace logo-bills-tree-service.png with your uploaded logo file path -->
-          <img src="./Images/Bills-Tree-Removal.png" alt="Bills Tree Service Logo" />
+          <img
+            src="./Images/Bills-Tree-Removal.png"
+            alt="Bills Tree Service Logo"
+          />
         </a>
 
-        <nav class="nav-links" aria-label="Main Navigation">
-          <a href="#services">Services</a>
-          <a href="#why">Why Choose Us</a>
+        <nav class="nav-links" id="navMenu" aria-label="Main Navigation">
           <a href="#reviews">Reviews</a>
+          <a href="#services">Services</a>
+          <a href="#why">Why Us</a>
           <a href="#gallery">Gallery</a>
           <a href="#areas">Areas We Serve</a>
           <a href="#faq">FAQ</a>
@@ -50,9 +53,14 @@
             460-3501</strong
           >
         </a>
-        <div class="mobile-menu-icon">
+        <button
+          class="mobile-menu-icon"
+          id="menuToggle"
+          aria-label="Toggle Menu"
+          aria-expanded="false"
+        >
           <i class="fa-solid fa-bars" aria-hidden="true"></i>
-        </div>
+        </button>
       </div>
     </header>
 
@@ -61,7 +69,7 @@
       <section class="hero">
         <div class="container hero-inner">
           <div class="hero-content">
-            <div class="eyebrow">Rochester’s Trusted Tree Experts</div>
+            <div class="eyebrow">TCIA Accredited Tree Service</div>
 
             <h1>Tree Removal <span class="text-red">Rochester, NY</span></h1>
 
@@ -170,8 +178,8 @@
               <i class="fa-solid fa-tree" aria-hidden="true"></i>
             </div>
             <div>
-              <strong>ISA-Certified Arborists</strong
-              ><span>Professional tree care</span>
+              <strong>Property Protection</strong
+              ><span>Clean-Up After the Job</span>
             </div>
           </div>
 
@@ -194,16 +202,58 @@
         </div>
       </div>
 
+      <!-- Certifications -->
+      <section class="section certifications">
+        <div class="container">
+          <div class="section-intro">
+            <h2>Our Certifications</h2>
+            <p>
+              We are proud to be recognized by leading industry organizations
+              for our commitment to safety, professionalism, and expertise in
+              tree care.
+            </p>
+          </div>
+          <div class="certifications-grid">
+            <div class="certification-item">
+              <div class="certification-icon">
+                <img
+                  src="./Images/french_cert_arb.png"
+                  alt="ISA-Certified Arborists Logo"
+                />
+              </div>
+              <div>
+                <strong>ISA-Certified Arborists</strong>
+                <span
+                  >International Society of Arboriculture certified
+                  professionals</span
+                >
+              </div>
+            </div>
+            <div class="certification-item">
+              <div class="certification-icon">
+                <img
+                  src="./Images/logo_rgb_for_web.jpg"
+                  alt="TCIA Accredited Tree Service Logo"
+                />
+              </div>
+              <div>
+                <strong>TCIA Accredited Tree Service</strong>
+                <span
+                  >Tree Care Industry Association accredited service
+                  provider</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Reviews -->
       <section class="section" id="reviews">
         <div class="container">
           <div class="section-intro">
             <div class="eyebrow">What Customers Say</div>
             <h2>What Rochester Customers Are Saying</h2>
-            <p>
-              Use real customer reviews here for stronger ad landing page trust
-              and better conversion.
-            </p>
           </div>
 
           <div class="grid-3">
@@ -216,12 +266,14 @@
                 ><i class="fa-solid fa-star" aria-hidden="true"></i>
               </div>
               <blockquote>
-                “Professional, efficient, and cleaned up afterward. Bills Tree
-                Removal handled the job safely and made the process easy.”
+                “I hired Bills Tree Removal for stump grinding, and I’m very
+                satisfied with the results. The team arrived on time, worked
+                safely, and finished the job quickly without any mess left
+                behind. Pricing was fair, and the quality of work was solid. ”
               </blockquote>
               <div class="review-person">
-                <div class="avatar">S</div>
-                <div><strong>Sarah M.</strong><span>Pittsford, NY</span></div>
+                <div class="avatar">C</div>
+                <div><strong>Christophe Brtm</strong></div>
               </div>
             </article>
 
@@ -234,12 +286,13 @@
                 ><i class="fa-solid fa-star" aria-hidden="true"></i>
               </div>
               <blockquote>
-                “Fast help after storm damage. The crew responded quickly and
-                helped clear a dangerous tree problem.”
+                “Finally our tree is gone - Bills and his team did an excellent
+                job . They are very professional Best tree removal company in
+                Rochester ny”
               </blockquote>
               <div class="review-person">
-                <div class="avatar">J</div>
-                <div><strong>James T.</strong><span>Irondequoit, NY</span></div>
+                <div class="avatar">T</div>
+                <div><strong>Todd White</strong></div>
               </div>
             </article>
 
@@ -252,12 +305,12 @@
                 ><i class="fa-solid fa-star" aria-hidden="true"></i>
               </div>
               <blockquote>
-                “Careful work around the property. They took time to protect the
-                yard and left the area clean.”
+                “Finally Tom and his team came on time removed the tree . One of
+                the best Tree service company in Rochester ny . Fair price”
               </blockquote>
               <div class="review-person">
-                <div class="avatar">M</div>
-                <div><strong>Mark L.</strong><span>Greece, NY</span></div>
+                <div class="avatar">T</div>
+                <div><strong>Tracy Unier</strong></div>
               </div>
             </article>
           </div>
@@ -310,7 +363,7 @@
           <div class="grid-4">
             <article class="card service-card">
               <img
-                src="https://images.unsplash.com/photo-1620207418302-439b387441b0?auto=format&fit=crop&w=900&q=85"
+                src="./Images/Tree Removal Rochester, NY.png"
                 alt="Tree removal service in Rochester NY"
               />
               <div class="card-body">
@@ -333,7 +386,7 @@
 
             <article class="card service-card">
               <img
-                src="https://images.unsplash.com/photo-1605112435913-6c4a4f7f979c?auto=format&fit=crop&w=900&q=85"
+                src="./Images/Emergency Tree Removal.png"
                 alt="Emergency tree removal after storm damage"
               />
               <div class="card-body">
@@ -356,7 +409,7 @@
 
             <article class="card service-card">
               <img
-                src="https://images.unsplash.com/photo-1594904351111-a072f80b1a71?auto=format&fit=crop&w=900&q=85"
+                src="./Images/Tree Trimming Rochester, NY.png"
                 alt="Tree trimming service near Rochester NY"
               />
               <div class="card-body">
@@ -379,7 +432,7 @@
 
             <article class="card service-card">
               <img
-                src="https://images.unsplash.com/photo-1623205862412-2cfc6b34f7f5?auto=format&fit=crop&w=900&q=85"
+                src="./Images/Stump Grinding Rochester, NY.png"
                 alt="Stump grinding service in Rochester NY"
               />
               <div class="card-body">
@@ -483,7 +536,14 @@
                 Professional Tree Service Standards
               </div>
 
-              <h2>TCIA Accredited Tree Service in Rochester, NY</h2>
+              <div class="tcia-heading-with-logo">
+                <img
+                  src="./Images/logo_rgb_for_web.jpg"
+                  alt="TCIA Logo"
+                  class="tcia-logo-rounded"
+                />
+                <h2>TCIA Accredited Tree Service in Rochester, NY</h2>
+              </div>
 
               <p>
                 When hiring a tree removal company, safety and professionalism
@@ -573,14 +633,14 @@
             </div>
             <div class="gallery-item">
               <img
-                src="https://images.unsplash.com/photo-1594750852565-5cd13f1e9ac3?auto=format&fit=crop&w=900&q=85"
+                src="./Images/Storm Cleanup.png"
                 alt="Storm cleanup tree service"
               />
               <div class="gallery-caption">Storm Cleanup</div>
             </div>
             <div class="gallery-item">
               <img
-                src="https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=900&q=85"
+                src="./Images/Clean Yard Finish.png"
                 alt="Clean yard after tree service"
               />
               <div class="gallery-caption">Clean Yard Finish</div>
@@ -847,7 +907,7 @@
           <div>
             <img
               class="footer-logo"
-              src="./Images/billstree.jpeg"
+              src="./Images/Bills-Tree-Removal.png"
               alt="Bills Tree Service Logo"
             />
             <p>
@@ -890,17 +950,65 @@
             <p class="emergency">24/7 Emergency Service Available</p>
           </div>
         </div>
-
-        <div class="footer-bottom">
-          <span>© 2026 Bills Tree Removal. All rights reserved.</span>
-          <span>Privacy Policy | Terms of Service</span>
-        </div>
       </div>
     </footer>
 
-    <a class="mobile-sticky-cta" href="tel:+15854603501"
-      ><i class="fa-solid fa-phone-volume" aria-hidden="true"></i> Call Bills
-      Tree Removal Now</a
-    >
+    <div class="mobile-sticky-cta-wrapper">
+      <a class="mobile-sticky-cta mobile-call-btn" href="tel:+15854603501"
+        ><i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+      </a>
+      <button
+        class="mobile-sticky-cta mobile-scroll-up-btn"
+        aria-label="Scroll to top"
+      >
+        <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <script>
+      // Mobile menu toggle functionality
+      const menuToggle = document.getElementById("menuToggle");
+      const navMenu = document.getElementById("navMenu");
+
+      menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("mobile-open");
+        const isOpen = navMenu.classList.contains("mobile-open");
+        menuToggle.setAttribute("aria-expanded", isOpen);
+      });
+
+      // Close menu when a link is clicked
+      const navLinks = navMenu.querySelectorAll("a");
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          navMenu.classList.remove("mobile-open");
+          menuToggle.setAttribute("aria-expanded", "false");
+        });
+      });
+
+      // Close menu when scrolling
+      window.addEventListener("scroll", () => {
+        navMenu.classList.remove("mobile-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+      });
+
+      const scrollUpBtn = document.querySelector(".mobile-scroll-up-btn");
+
+      // Show/hide scroll up button based on scroll position
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          scrollUpBtn.classList.add("visible");
+        } else {
+          scrollUpBtn.classList.remove("visible");
+        }
+      });
+
+      // Scroll to top when button is clicked
+      scrollUpBtn.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    </script>
   </body>
 </html>
